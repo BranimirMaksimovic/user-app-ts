@@ -1,8 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import data from "./data/data.json";
+import { UserType } from "./types";
 
 function App() {
+  let [users, setUsers] = useState<UserType[]>(data.users);
   return (
     <div className="App">
       <header className="App-header">
