@@ -1,5 +1,3 @@
-import { string } from "yup";
-
 export type UserType = {
   id: number;
   first_name: string;
