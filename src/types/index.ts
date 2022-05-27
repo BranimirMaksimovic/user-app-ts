@@ -1,3 +1,5 @@
+import { string } from "yup";
+
 export type UserType = {
   id: number;
   first_name: string;
@@ -8,4 +10,12 @@ export type UserType = {
 
 export type UsersType = {
   users: UserType[];
+};
+
+export type NewUserType = Omit<UserType, "id">;
+
+export type SelectOptionType = {
+  id: string;
+  label: string;
+  value: string;
 };
